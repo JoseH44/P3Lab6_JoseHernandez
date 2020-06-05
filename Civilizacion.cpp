@@ -90,7 +90,7 @@ vector<Habitante*> Civilizacion::getHabitantes(){
 
 //setter y getter de numero de habitantes
 void Civilizacion::setNum_Habitantes(){
-	num_habitantes++;
+	num_habitantes = num_casas * 5;
 }
 int Civilizacion::getNum_Habitantes(){
 	return num_habitantes;
@@ -120,6 +120,10 @@ void Civilizacion::setEstablos(){
 
 int Civilizacion::getEstablos(){
 	return num_establos;
+}
+
+void Civilizacion::agregarHabitante(Habitante* pHabitante){
+	lista_habitantes.push_back(pHabitante);
 }
 
 

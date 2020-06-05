@@ -41,6 +41,7 @@ class Civilizacion
 		int getAlimento();
 		//getter de habitantes
 		vector<Habitante*> getHabitantes();
+		void agregarHabitante(Habitante*);
 		//setter y getter de numero de habitantes
 		void setNum_Habitantes();
 		int getNum_Habitantes();
