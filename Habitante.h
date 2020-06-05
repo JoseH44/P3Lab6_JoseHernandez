@@ -1,0 +1,18 @@
+#ifndef HABITANTE_H
+#define HABITANTE_H
+
+class Habitante
+{
+	protected:
+		int valor_vida;
+	public:
+		Habitante();
+		Habitante(int);
+		//setter y getter de vida
+		void setVida(int);
+		int getVida();
+		~Habitante();
+	
+};
+
+#endif
