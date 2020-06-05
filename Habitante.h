@@ -7,7 +7,7 @@ class Habitante
 		int valor_vida;
 	public:
 		Habitante();
-		Habitante(int);
+		
 		//setter y getter de vida
 		void setVida(int);
 		int getVida();

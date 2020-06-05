@@ -1,10 +1,7 @@
 #include "Habitante.h"
 
-Habitante::Habitante()
-{
-}
-Habitante::Habitante(int pVida){
-	this->valor_vida = pVida;
+Habitante::Habitante(){
+	this->valor_vida = 100;
 }
 
 void Habitante::setVida(int newVida){
