@@ -17,15 +17,21 @@ Civilizacion::Civilizacion(string pNombre){
 	this->cant_alimento = 50;
 	this->num_casas = 2;
 	this->num_habitantes = 10;
-	Habitante* aldeano1 = new Aldeano();
+	for(int i = 0; i < 5;i++){
+		Habitante* aldeano1 = new Aldeano();
+		lista_habitantes.push_back(aldeano1);
+	}
+	/*Habitante* aldeano1 = new Aldeano();
 	Habitante* aldeano2 = new Aldeano();
 	Habitante* aldeano3 = new Aldeano();
 	Habitante* aldeano4 = new Aldeano();
-	Habitante* jinete1 = new Jinete();
+	
 	lista_habitantes.push_back(aldeano1);
 	lista_habitantes.push_back(aldeano2);
 	lista_habitantes.push_back(aldeano3);
 	lista_habitantes.push_back(aldeano4);
+	*/
+	Habitante* jinete1 = new Jinete();
 	lista_habitantes.push_back(jinete1);
 	
 }
