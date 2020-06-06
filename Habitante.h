@@ -11,7 +11,7 @@ class Habitante
 		//setter y getter de vida
 		void setVida(int);
 		int getVida();
-		~Habitante();
+		virtual ~Habitante();
 	
 };
 
