@@ -12,7 +12,7 @@ class Guerrero : public Habitante
 		//setter y getter de valor de ataque
 		void setValorAtaque(int);
 		int getValorAtaque();
-		virtual void atacar(Habitante*)=0;
+		
 		
 		~Guerrero();
 	
