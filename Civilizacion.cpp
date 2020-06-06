@@ -96,6 +96,10 @@ int Civilizacion::getNum_Habitantes(){
 	return num_habitantes;
 }
 
+void Civilizacion::setRestarHabitante(){
+	num_habitantes--;
+}
+
 //setter y getter de numero de casas
 void Civilizacion::setCasas(){
 	num_casas++;

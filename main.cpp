@@ -220,13 +220,31 @@ int main(int argc, char** argv) {
 												
 												if(temporalHabitante2->getVida() == 0 || temporalHabitante2->getVida() < 0){
 													civilizacion_propia->eliminarHabitante(i);
+													civilizacion_propia->setRestarHabitante();
 												}//si la vida del atacante llega a 0 lo elimina
 												
+												//muestra informacion de las civilizaciones
 												if(civilizacion_atacada->getHabitantes()[num_random]->getVida() == 0 || 
 												civilizacion_atacada->getHabitantes()[num_random]->getVida() < 0){
 													civilizacion_atacada->eliminarHabitante(num_random);
+													civilizacion_atacada->setRestarHabitante();
 												}
 												
+												cout<<endl<<"Habitantes restantes de la Civilizacion "<<civilizacion_propia->getNombre()<<":"<<
+													civilizacion_propia->getNum_Habitantes()<<endl;
+												cout<<endl<<"Habitantes restantes de la Civilizacion "<<civilizacion_atacada->getNombre()<<":"<<
+													civilizacion_atacada->getNum_Habitantes()<<endl;
+													
+												if(civilizacion_atacada->getHabitantes().size() == 0){
+													delete lista_civilizaciones[posAtaque];
+													lista_civilizaciones.erase(lista_civilizaciones.begin()+posAtaque);
+													
+												}
+												if(civilizacion_propia->getHabitantes().size() == 0){
+													delete lista_civilizaciones[i];
+													lista_civilizaciones.erase(lista_civilizaciones.begin()+i);
+												}
+													
 											}
 										}
 										

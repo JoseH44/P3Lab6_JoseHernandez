@@ -46,6 +46,7 @@ class Civilizacion
 		//setter y getter de numero de habitantes
 		void setNum_Habitantes();
 		int getNum_Habitantes();
+		void setRestarHabitante();
 		//setter y getter de numero de casas
 		void setCasas();
 		int getCasas();
