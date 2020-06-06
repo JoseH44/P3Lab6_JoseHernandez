@@ -218,6 +218,15 @@ int main(int argc, char** argv) {
 												temporalHabitante2->atacar(civilizacion_atacada->getHabitantes()[num_random]);
 												civilizacion_atacada->getHabitantes()[num_random]->atacar(temporalHabitante2);
 												
+												if(temporalHabitante2->getVida() == 0 || temporalHabitante2->getVida() < 0){
+													civilizacion_propia->eliminarHabitante(i);
+												}//si la vida del atacante llega a 0 lo elimina
+												
+												if(civilizacion_atacada->getHabitantes()[num_random]->getVida() == 0 || 
+												civilizacion_atacada->getHabitantes()[num_random]->getVida() < 0){
+													civilizacion_atacada->eliminarHabitante(num_random);
+												}
+												
 											}
 										}
 										

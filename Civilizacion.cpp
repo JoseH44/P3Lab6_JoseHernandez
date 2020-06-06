@@ -126,6 +126,9 @@ void Civilizacion::agregarHabitante(Habitante* pHabitante){
 	lista_habitantes.push_back(pHabitante);
 }
 
+void Civilizacion::eliminarHabitante(int index){
+	lista_habitantes.erase(lista_habitantes.begin()+index);
+}
 
 Civilizacion::~Civilizacion()
 {
